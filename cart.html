@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Cart</title>
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+ShopEase
+</div>
+
+<ul class="nav-links">
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+<li>
+<a href="products.html">Products</a>
+</li>
+
+<li>
+<a href="cart.html">Cart 🛒</a>
+</li>
+
+<li>
+<a href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<main class="products-section">
+
+<h1>Your Shopping Cart</h1>
+
+<div id="cartContainer"></div>
+
+</main>
+
+<footer>
+
+<p>
+© 2026 ShopEase. All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+
+const cartContainer =
+document.getElementById("cartContainer");
+
+let cart =
+JSON.parse(localStorage.getItem("cart")) || [];
+
+function displayCart() {
+
+    cartContainer.innerHTML = "";
+
+    if (cart.length === 0) {
+
+        cartContainer.innerHTML =
+        "<p>Your cart is empty.</p>";
+
+        return;
+    }
+
+    let total = 0;
+
+    cart.forEach((product, index) => {
+
+        total += product.price;
+
+        const item =
+        document.createElement("div");
+
+        item.className = "feature-card";
+
+        item.innerHTML = `
+
+            <h3>${product.name}</h3>
+
+            <p>₹${product.price}</p>
+
+            <button
+                class="btn"
+                onclick="removeItem(${index})">
+
+                Remove
+
+            </button>
+        `;
+
+        cartContainer.appendChild(item);
+
+    });
+
+    const totalElement =
+    document.createElement("h2");
+
+    totalElement.innerHTML =
+    `Total: ₹${total}`;
+
+    cartContainer.appendChild(totalElement);
+}
+
+
+function removeItem(index) {
+
+    cart.splice(index, 1);
+
+    localStorage.setItem(
+        "cart",
+        JSON.stringify(cart)
+    );
+
+    displayCart();
+}
+
+displayCart();
+
+</script>
+
+</body>
+
+</html>
