@@ -6,7 +6,6 @@ const products = [
         category: "electronics",
         price: 1999,
         image: "images/headphones.jpg"
-
     },
 
     {
@@ -15,7 +14,6 @@ const products = [
         category: "electronics",
         price: 2499,
         image: "images/watch.jpg"
-        
     },
 
     {
@@ -24,7 +22,6 @@ const products = [
         category: "fashion",
         price: 799,
         image: "images/tshirt.jpg"
-
     },
 
     {
@@ -33,7 +30,6 @@ const products = [
         category: "fashion",
         price: 1899,
         image: "images/shoes.jpg"
-
     },
 
     {
@@ -42,7 +38,6 @@ const products = [
         category: "home",
         price: 3499,
         image: "images/chair.jpg"
-
     },
 
     {
@@ -51,7 +46,6 @@ const products = [
         category: "home",
         price: 999,
         image: "images/lamp.jpg"
-
     }
 
 ];
