@@ -5,7 +5,8 @@ const products = [
         name: "Wireless Headphones",
         category: "electronics",
         price: 1999,
-        image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+        image: "images/headphones.jpg"
+
     },
 
     {
@@ -13,7 +14,8 @@ const products = [
         name: "Smart Watch",
         category: "electronics",
         price: 2499,
-        image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+        image: "images/watch.jpg"
+        
     },
 
     {
@@ -21,7 +23,8 @@ const products = [
         name: "Casual T-Shirt",
         category: "fashion",
         price: 799,
-        image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+        image: "images/tshirt.jpg"
+
     },
 
     {
@@ -29,7 +32,8 @@ const products = [
         name: "Running Shoes",
         category: "fashion",
         price: 1899,
-        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+        image: "images/shoes.jpg"
+
     },
 
     {
@@ -37,7 +41,8 @@ const products = [
         name: "Modern Chair",
         category: "home",
         price: 3499,
-        image: "https://images.unsplash.com/photo-1503602642458-232111445657"
+        image: "images/chair.jpg"
+
     },
 
     {
@@ -45,7 +50,8 @@ const products = [
         name: "Table Lamp",
         category: "home",
         price: 999,
-        image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c"
+        image: "images/lamp.jpg"
+
     }
 
 ];
