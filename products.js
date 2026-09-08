@@ -5,7 +5,7 @@ const products = [
         name: "Wireless Headphones",
         category: "electronics",
         price: 1999,
-        image: "images/headphones.jpg"
+        image: "headphones.jpg"
     },
 
     {
@@ -13,7 +13,7 @@ const products = [
         name: "Smart Watch",
         category: "electronics",
         price: 2499,
-        image: "images/watch.jpg"
+        image: "watch.jpg"
     },
 
     {
@@ -21,7 +21,7 @@ const products = [
         name: "Casual T-Shirt",
         category: "fashion",
         price: 799,
-        image: "images/tshirt.jpg"
+        image: "tshirt.jpg"
     },
 
     {
@@ -29,7 +29,7 @@ const products = [
         name: "Running Shoes",
         category: "fashion",
         price: 1899,
-        image: "images/shoes.jpg"
+        image: "shoes.jpg"
     },
 
     {
@@ -37,7 +37,7 @@ const products = [
         name: "Modern Chair",
         category: "home",
         price: 3499,
-        image: "images/chair.jpg"
+        image: "chair.jpg"
     },
 
     {
@@ -45,7 +45,7 @@ const products = [
         name: "Table Lamp",
         category: "home",
         price: 999,
-        image: "images/lamp.jpg"
+        image: "lamp.jpg"
     }
 
 ];
